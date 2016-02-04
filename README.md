@@ -10,10 +10,12 @@ the value associated with the value.
 
 By the end of this, students should be able to:
 
-- Create a Hash.
-- Add, remove, retrieve and modify hash entries/elements.
-- Why keys are symbols.
-- Use old, hash rocket =>, and new syntax.
+- Constrast Ruby Hashes with JavaScript dictionaries.
+- Create a Ruby Hash using both the implicit (`{}`) and `new` constructors.
+- Assign a value to or modify a value in a Ruby Hash using a specified key.
+- Access a value in a Ruby Hash using a specified key.
+- Obtain an Array of keys from a Ruby Hash.
+- Explain why Symbols are preferred over Strings as keys in a Ruby Hash.
 
 
 ## Ruby Symbols
