@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
-
-gem 'pry-byebug'
-gem 'rspec', '~> 3.1'
-
-gem 'faker'
-gem 'awesome_print'
+ruby '2.2.4'
+gem 'rspec', '~> 3.3'
+gem 'pry', '~> 0.10'
+gem 'byebug', '~> 5.0'
