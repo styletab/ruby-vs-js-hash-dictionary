@@ -141,7 +141,7 @@ A quick look at access and assignment in `bin/code_along.rb`.
 
 ### Lab
 
-Append " Boston" to both `:experience` and `:education` in the hash in `bin/lab.rb`.  Append one or more item of your choosing to the values at each of these keys.
+Append `" Boston"` to both `:experience` and `:education` in the hash in `bin/lab.rb`.  Append one or more item of your choosing to the values at each of these keys.
 
 ### Bonus
 
