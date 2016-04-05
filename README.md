@@ -78,16 +78,12 @@ Let's look at different ways to create a Hash.
 => {}
 > consultant = Hash.new('')
 => {}
+> consultant.default = ''
+=> ""
 > consultant[:surname]
 => ""
 > consultant
 => {}
-> consultant = Hash.new {|hash, key| hash[key] = ''}
-=> {}
-> consultant[:surname]
-=> ""
-> consultant
-=> {:surname=>""}
 > consultant = { given_name: 'Antony', surname: 'Donovan', height: 76}
 => {:given_name=>"Antony", :surname=>"Donovan", :height=>76}
 > consultant[:weight] += 10
@@ -107,7 +103,7 @@ Let's use the different forms of [Hash::new](http://ruby-doc.org/core-2.2.4/Hash
 
 ### Lab
 
-In `bin/lab.rb` use `Hash.new` to create a Ruby Hash that has `[]` as the default for the keys `:experience` and `:education`.  These defaults should be assigned to the appropriate key on access or assignment.
+In `bin/lab.rb` create a hash using the shorthand syntax for assigning the keys `:education` and `:experience` with the string "GA WDI". Then assign a default of `[]` to the hash and make sure that accessing non-existing keys return the default.
 
 ## Assigning and accessing elements in a Ruby Hash
 
@@ -145,7 +141,11 @@ A quick look at access and assignment in `bin/code_along.rb`.
 
 ### Lab
 
-Append "GA WDI" to both `:experience` and `:education` in the hash in `bin/lab.rb`.  Append one or more item of your choosing to the values at each of these keys.
+Append " Boston" to both `:experience` and `:education` in the hash in `bin/lab.rb`.  Append one or more item of your choosing to the values at each of these keys.
+
+### Bonus
+
+In `bin/lab.rb` initialize `Hash.new` with a [block](https://netinlet.com/blog/2014/01/01/fun-with-ruby-hashes/) so that if a key is searched for and does not exist, then it will automatically be placed in the hash with a default value.
 
 ## [License](LICENSE)
 
