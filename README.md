@@ -132,10 +132,6 @@ Then assign a default of `[]` to the hash and make sure that accessing
 > consultant[:surname].prepend 'O\''
 => "O'Fazah"
 > consultant[:surname]
-=> "Fazah"
-> consultant[:surname] = consultant[:surname].prepend 'O\''
-=> "O'Fazah"
-> consultant[:surname]
 => "O'Fazah"
 ```
 
