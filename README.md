@@ -135,6 +135,14 @@ Then assign a default of `[]` to the hash and make sure that accessing
 => "O'Fazah"
 ```
 
+### Lab: Appending
+
+Append `" Boston"` to both `:experience` and `:education` in the hash in
+[bin/lab.rb](bin/lab.rb).  Append one or more item of your choosing to the
+values at each of these keys.
+
+### Demo: Hash Keys
+
 To get an Array of the keys that have been set in a hash, use `Hash#keys`.
 
 ```ruby
@@ -142,21 +150,17 @@ To get an Array of the keys that have been set in a hash, use `Hash#keys`.
 => [:given_name, :surname, :height, :weight]
 ```
 
-### Code Along: Access and Assignment
+### Lab: Hash.new Initialized With Default
 
-A quick look at access and assignment in [bin/code_along.rb](bin/code_along.rb).
+If you noticed during the demo above, we were able to add a default value of
+an empty string to the `consultant` hash using `consultant.default = ''`.
 
-### Lab: Appending
+What if we wanted to instantiate our new hash with this default right off the
+ bat? Checkout the Ruby docs on [new hashes with default blocks](http://ruby-doc.org/core-2.3.0/Hash.html#new-method).
 
-Append `" Boston"` to both `:experience` and `:education` in the hash in
-[bin/lab.rb](bin/lab.rb).  Append one or more item of your choosing to the
-values at each of these keys.
-
-### Bonus
-
-In `bin/lab.rb` initialize `Hash.new` with a [block](https://netinlet.com/blog/2014/01/01/fun-with-ruby-hashes/)
-so that if a key is searched for and does not exist, then it will automatically
-be placed in the hash with a default value.
+Then, in `bin/lab.rb` initialize a new hash using `Hash.new` with a block that
+ sets the default value (without using `.default`) of all keys to the string
+`"Sorry, <keyname> does not exist".`
 
 ## [License](LICENSE)
 
